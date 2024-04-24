@@ -11,7 +11,7 @@ jobs:
   run_docker_build_workflow:
     uses: ukwa/ukwa-services/.github/workflows/push-to-docker-hub.yml@master
     with:
-      image_name: ldbiz/monitor-stat-pusher
+      image_name: ukwa/monitor-stat-pusher
       context: ./stat-pusher
     secrets:
       DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
